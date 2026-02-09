@@ -5,20 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio MMI | Digital Brew</title>
     
-    <!-- Polices Google -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;600&family=VT323&display=swap" rel="stylesheet">
     
-    <!-- Ton CSS -->
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- TEXTURE DE BRUIT (Overlay global) -->
+
     <div class="noise-overlay"></div>
 
-    <!-- SÉQUENCE D'INTRO (Loader) -->
+
     <div id="intro-overlay">
         <div class="scanlines"></div>
         
@@ -35,7 +35,7 @@
         <button id="wake-btn">[ WAKE UP ]</button>
     </div>
 
-    <!-- EASTER EGG (Konami) -->
+
     <div id="easter-egg">
         <div class="egg-content">
             <span class="emoji">👾</span>
@@ -44,135 +44,268 @@
         </div>
     </div>
 
-    <!-- CONTENU PRINCIPAL -->
+
     <main id="main-content">
         
-        <!-- Navigation -->
-        <nav>
-            <div class="logo">JOHN.MMI</div>
-            <a href="#contact" class="cta-nav">Discuter</a>
-        </nav>
 
-        <!-- Header Hero -->
+	<nav>
+		<div class="logo-wrapper">
+			<!-- Logo Café SVG (Redimensionné pour la nav) -->
+			<svg viewBox="0 0 24 24" fill="currentColor" class="nav-icon">
+				<path d="M2,21H20V19H2M20,8H18V5H20M20,3H4V13A4,4 0 0,0 8,17H14A4,4 0 0,0 18,13V10H20A2,2 0 0,0 22,8V5C22,3.89 21.1,3 20,3Z" />
+			</svg>
+			<div class="logo-text">DIMITRI.GAY</div>
+		</div>
+		<a href="#contact" class="cta-nav">Me contacter</a>
+	</nav>
+
+
         <section class="hero">
-            <div class="hero-bg">
-                <!-- Remplace cette image par ta vidéo en background plus tard -->
-                <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=2070&auto=format&fit=crop" alt="Background">
-            </div>
-            <div class="hero-content">
-                <h1>CRÉATIF <span class="accent">///</span> DIGITAL</h1>
-                <p id="typewriter"></p>
-                <div class="scroll-indicator">↓</div>
-            </div>
-        </section>
+			<div class="hero-bg">
+				<!-- Idéalement, mets une image tirée de ton court-métrage ou une photo de setup ici -->
+				<img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=2070&auto=format&fit=crop" alt="Background">
+			</div>
+			<div class="hero-content">
+				<!-- Ton Nom -->
+				<h1>DIMITRI <span class="accent">GAY</span></h1>
+				<p id="typewriter" class="typewriter-text"></p>
+				<div class="scroll-indicator">↓</div>
+			</div>
+		</section>
+
 
         <!-- Profil / About -->
-        <section class="section about">
-            <div class="container grid-2">
-                <div class="about-text">
-                    <h2 class="section-title">01. PROFIL_</h2>
-                    <p>Étudiant en dernière année de <strong class="highlight">BUT MMI</strong>. Je ne choisis pas entre le code et la vidéo : je fais les deux. Mon approche est simple : raconter des histoires visuelles soutenues par une technique web solide.</p>
-                    <div class="tags">
-                        <span>Vidéo</span>
-                        <span>Motion</span>
-                        <span class="highlight-tag">Front-End</span>
-                    </div>
-                </div>
-                <div class="about-visual">
-                    <div class="video-frame">
-                        <span>PLAY SHOWREEL 2025 ▶</span>
-                    </div>
-                </div>
-            </div>
-        </section>
+		<section class="section about">
+			<div class="container grid-2">
+				<div class="about-text">
+					<h2 class="section-title">01. PROFIL_</h2>
+					<p>
+						Actuellement en alternance (Communication Externe) et fin de <strong class="highlight">BUT MMI</strong>. 
+						Mon parcours est atypique : après un Bac Scientifique couplé à une formation aux <span class="pink">Beaux-Arts</span> (pratique hebdomadaire durant 3 ans), j'ai transité par l'ingénierie (INSA) avant de trouver ma voie dans la création numérique.
+					</p>
+					<p style="margin-top: 15px;">
+						<strong class="accent">Ancien Pompier Volontaire</strong>, j'ai dû mettre cette activité en pause pour mes études, mais j'en garde une gestion du stress infaillible et un fort esprit d'équipe.
+					</p>
+					<p style="margin-top: 15px; font-size: 0.9rem; color: #888;">
+						<em>Mon objectif ? Mettre ma technique au service de l'image et du message.</em>
+					</p>
+					
+					<div class="tags" style="margin-top: 20px;">
+						<span>Vidéaste</span>
+						<span>Drone</span>
+						<span class="highlight-tag">Communication</span>
+						<span class="pink" style="border-color: #ff00ff;">Créativité</span>
+					</div>
+				</div>
+				<div class="about-visual">
+					<div class="video-frame">
+						<span>DÉCOUVRIR MON UNIVERS ▶</span>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
 
         <!-- Projets -->
-        <section class="section projects">
-            <div class="container">
-                <div class="projects-header">
-                    <h2 class="section-title">02. SELECT MISSION_</h2>
-                    <div class="filters">
-                        <button class="active">[ ALL ]</button>
-                        <button>[ VIDEO ]</button>
-                        <button>[ WEB ]</button>
-                    </div>
-                </div>
+		<section class="section projects">
+			<div class="container">
+				<div class="projects-header">
+					<h2 class="section-title">02. RÉALISATIONS_</h2>
+					<div class="filters">
+						<!-- Ajout de data-filter pour le JS -->
+						<button class="filter-btn active" data-filter="all">[ ALL ]</button>
+						<button class="filter-btn" data-filter="video">[ VIDÉO/MOTION ]</button>
+						<button class="filter-btn" data-filter="design">[ PRINT/DESIGN ]</button>
+					</div>
+				</div>
 
-                <div class="projects-grid">
-                    <!-- Projet 1 -->
-                    <article class="project-card">
-                        <div class="card-image">
-                            <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1000&auto=format&fit=crop" alt="Projet 1">
-                            <div class="overlay"></div>
-                        </div>
-                        <h3>Neon City Doc</h3>
-                        <p>PREMIERE PRO • DOCUMENTAIRE</p>
-                    </article>
+				<div class="projects-grid">
+					
+					<!-- 1. Mison Drone (VIDÉO) -->
+					<article class="project-card" data-category="video">
+						<div class="card-image">
+							<img src="https://images.unsplash.com/photo-1473968512647-3e447244af8f?q=80&w=1000&auto=format&fit=crop" alt="Drone Mison">
+							<div class="overlay"></div>
+						</div>
+						<h3>Mison : Vue du Ciel</h3>
+						<p class="highlight">VIDÉO • DRONE • MONTAGE</p>
+						<p class="project-desc">Production complète vidéo promotionnelle (Été 2025).</p>
+					</article>
 
-                    <!-- Projet 2 -->
-                    <article class="project-card">
-                        <div class="card-image">
-                            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1000&auto=format&fit=crop" alt="Projet 2">
-                            <div class="overlay"></div>
-                        </div>
-                        <h3>Dev Portfolio</h3>
-                        <p>JS VANILLA • CSS</p>
-                    </article>
+					<!-- 2. Rétrospective 2025 (VIDÉO - Nouveau) -->
+					<article class="project-card" data-category="video">
+						<div class="card-image">
+							<img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1000&auto=format&fit=crop" alt="Rétrospective">
+							<div class="overlay"></div>
+						</div>
+						<h3>Rétrospective 2025</h3>
+						<p class="highlight">MOTION DESIGN • MONTAGE</p>
+						<p class="project-desc">Vidéo bilan pour le Département 04. Rythme dynamique.</p>
+					</article>
 
-                    <!-- Projet 3 -->
-                    <article class="project-card">
-                        <div class="card-image">
-                            <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1000&auto=format&fit=crop" alt="Projet 3">
-                            <div class="overlay"></div>
-                        </div>
-                        <h3>Cyber Sec Camp</h3>
-                        <p>COM • BRANDING</p>
-                    </article>
-                </div>
-            </div>
-        </section>
+					<!-- 3. Durance à Vélo (VIDÉO/3D - Nouveau) -->
+					<article class="project-card" data-category="video">
+						<div class="card-image">
+							<img src="https://images.unsplash.com/photo-1565610237028-e76742541f72?q=80&w=1000&auto=format&fit=crop" alt="Durance Vélo">
+							<div class="overlay"></div>
+						</div>
+						<h3>Tracé Durance 3D</h3>
+						<p class="accent">BLENDER • AFTER EFFECTS</p>
+						<p class="project-desc">Visualisation 3D d'une piste cyclable sur fond réel.</p>
+					</article>
+
+					<!-- 4. Infographie Budget (DESIGN - Nouveau) -->
+					<article class="project-card" data-category="design">
+						<div class="card-image">
+							<img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1000&auto=format&fit=crop" alt="Infographie Budget">
+							<div class="overlay"></div>
+						</div>
+						<h3>Budget Citoyen</h3>
+						<p class="pink">INDESIGN • INFOGRAPHIE</p>
+						<p class="project-desc">Vulgarisation de données financières pour le mag du Département.</p>
+					</article>
+
+					<!-- 5. Musée PHI (DESIGN - Nouveau) -->
+					<article class="project-card" data-category="design">
+						<div class="card-image">
+							<img src="https://images.unsplash.com/photo-1509343256512-d77a5cb3791b?q=80&w=1000&auto=format&fit=crop" alt="Musée PHI">
+							<div class="overlay"></div>
+						</div>
+						<h3>Plaquette Musée PHI</h3>
+						<p class="pink">MISE EN PAGE • PRINT</p>
+						<p class="project-desc">Programme trimestriel Oct-Déc 2025. Design épuré.</p>
+					</article>
+
+					<!-- 6. Portrait Pompier (VIDÉO) -->
+					<article class="project-card" data-category="video">
+						<div class="card-image">
+							<img src="https://images.unsplash.com/photo-1598550476439-6847785fcea6?q=80&w=1000&auto=format&fit=crop" alt="Interview Pompier">
+							<div class="overlay"></div>
+						</div>
+						<h3>Portrait Insolite</h3>
+						<p class="accent">INTERVIEW • ÉTALONNAGE</p>
+						<p class="project-desc">Portrait "Prêtre-Pompier". Gestion lumière et son.</p>
+					</article>
+
+					<!-- 7. Court Métrage (VIDÉO) -->
+					<article class="project-card" data-category="video">
+						<div class="card-image">
+							<img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?q=80&w=1000&auto=format&fit=crop" alt="Court Métrage">
+							<div class="overlay"></div>
+						</div>
+						<h3>Je me souviens</h3>
+						<p class="highlight">SCÉNARIO • RÉALISATION</p>
+						<p class="project-desc">Court-métrage artistique. Expression personnelle.</p>
+					</article>
+
+				</div>
+			</div>
+		</section>
 
         <!-- Compétences (Stats RPG) -->
-        <section class="section skills">
-            <div class="container">
-                <h2 class="section-title center">03. STATS_</h2>
-                <div class="rpg-box">
-                    
-                    <div class="stat-row">
-                        <div class="stat-info">
-                            <span class="highlight">VIDEO EDITING</span>
-                            <span>LVL. 90</span>
-                        </div>
-                        <div class="stat-bar-bg">
-                            <div class="stat-bar-fill highlight-bg" style="width: 90%;"></div>
-                        </div>
-                    </div>
+		<section class="section skills">
+			<div class="container">
+				<h2 class="section-title center">03. ARSENAL_</h2>
+				<div class="rpg-box">
+					
+					<!-- Vidéo : Ton cœur de métier -->
+					<div class="stat-row">
+						<div class="stat-info">
+							<span class="highlight">VIDÉO & MOTION</span>
+							<span>LVL. 90</span>
+						</div>
+						<div class="stat-bar-bg">
+							<div class="stat-bar-fill highlight-bg" style="width: 90%;"></div>
+						</div>
+						<div class="mini-tags" style="margin-top:5px; font-size: 0.8rem; color:#666;">
+							Premiere Pro • After Effects • Pilotage Drone • DaVinci
+						</div>
+					</div>
 
-                    <div class="stat-row">
-                        <div class="stat-info">
-                            <span class="accent">CREATIVE CODING</span>
-                            <span>LVL. 75</span>
-                        </div>
-                        <div class="stat-bar-bg">
-                            <div class="stat-bar-fill accent-bg" style="width: 75%;"></div>
-                        </div>
-                    </div>
+					<!-- Com & Design -->
+					<div class="stat-row">
+						<div class="stat-info">
+							<span class="pink">COMMUNICATION & DESIGN</span>
+							<span>LVL. 85</span>
+						</div>
+						<div class="stat-bar-bg">
+							<div class="stat-bar-fill pink-bg" style="width: 85%;"></div>
+						</div>
+						 <div class="mini-tags" style="margin-top:5px; font-size: 0.8rem; color:#666;">
+							Stratégie • Rédaction • Photoshop • Illustrator • Canva
+						</div>
+					</div>
 
-                    <div class="stat-row">
-                        <div class="stat-info">
-                            <span class="pink">COMMUNICATION</span>
-                            <span>LVL. 85</span>
-                        </div>
-                        <div class="stat-bar-bg">
-                            <div class="stat-bar-fill pink-bg" style="width: 85%;"></div>
-                        </div>
-                    </div>
+					<!-- Web : En bonus / Culture générale -->
+					<div class="stat-row">
+						<div class="stat-info">
+							<span class="accent">CULTURE WEB & CMS</span>
+							<span>LVL. 60</span>
+						</div>
+						<div class="stat-bar-bg">
+							<div class="stat-bar-fill accent-bg" style="width: 60%;"></div>
+						</div>
+						<div class="mini-tags" style="margin-top:5px; font-size: 0.8rem; color:#666;">
+							WordPress • Compréhension HTML/CSS • Gestion de projet Web
+						</div>
+					</div>
 
-                </div>
-            </div>
-        </section>
+				</div>
+			</div>
+		</section>
+		
+		<!-- Timeline Parcours -->
+		<section class="section timeline">
+			<div class="container" style="max-width: 800px;">
+				<h2 class="section-title center">04. TIMELINE_</h2>
+				
+				<div style="border-left: 2px solid #333; padding-left: 30px; margin-left: 20px;">
+					
+					<!-- Actuel : Alternance -->
+					<div style="margin-bottom: 40px; position: relative;">
+						<div style="position: absolute; left: -39px; top: 0; width: 16px; height: 16px; background: var(--secondary-color); border-radius: 50%; box-shadow: 0 0 10px var(--secondary-color);"></div>
+						<h3 class="font-pixel text-xl text-white">ALTERNANCE COMMUNICATION</h3>
+						<span class="highlight">2025 - 2026 • DÉPARTEMENT 04</span>
+						<p style="margin-top: 10px; color: #aaa;">Service Communication Externe. (Suite logique de mon stage de 2ème année).</p>
+					</div>
 
-        <!-- Contact (Terminal) -->
+					<!-- Été 2025 : Vidéaste -->
+					<div style="margin-bottom: 40px; position: relative;">
+						<div style="position: absolute; left: -39px; top: 0; width: 16px; height: 16px; background: var(--accent-color); border-radius: 50%;"></div>
+						<h3 class="font-pixel text-xl text-white">VIDÉASTE DRONE</h3>
+						<span class="accent">ÉTÉ 2025 • MAIRIE DE MISON</span>
+						<p style="margin-top: 10px; color: #aaa;">Production d'une vidéo promotionnelle de la commune (tournage drone & montage).</p>
+					</div>
+
+					<!-- BUT MMI -->
+					<div style="margin-bottom: 40px; position: relative;">
+						<div style="position: absolute; left: -39px; top: 0; width: 16px; height: 16px; background: #fff; border-radius: 50%;"></div>
+						<h3 class="font-pixel text-xl text-white">BUT MMI</h3>
+						<span style="color: #666; font-size: 0.9rem;">2023 - 2026 • IUT CHAMBÉRY</span>
+						<p style="margin-top: 10px; color: #aaa;">Formation polyvalente. Job étudiant agent communal (Été 2024).</p>
+					</div>
+
+					<!-- INSA -->
+					<div style="margin-bottom: 40px; position: relative;">
+						<div style="position: absolute; left: -39px; top: 0; width: 16px; height: 16px; background: #555; border-radius: 50%;"></div>
+						<h3 class="font-pixel text-xl text-white">INSA TOULOUSE</h3>
+						<span style="color: #666; font-size: 0.9rem;">SEPT 2020 - JUIN 2023</span>
+						<p style="margin-top: 10px; color: #aaa;">Cursus Ingénieur. Acquisition de rigueur scientifique.</p>
+					</div>
+
+					<!-- BAC & Beaux Arts -->
+					<div style="margin-bottom: 40px; position: relative;">
+						<div style="position: absolute; left: -39px; top: 0; width: 16px; height: 16px; background: #333; border-radius: 50%;"></div>
+						<h3 class="font-pixel text-xl text-white">BAC STI2D & BEAUX-ARTS</h3>
+						<span style="color: #666; font-size: 0.9rem;">JUSQU'EN 2020</span>
+						<p style="margin-top: 10px; color: #aaa;">Bac mention Très Bien. Pratique artistique hebdomadaire aux Beaux-Arts durant les années lycée.</p>
+					</div>
+
+				</div>
+			</div>
+		</section>
+		
         <section id="contact" class="section contact">
             <div class="container">
                 <h2 class="section-title center">04. SEND_DATA_</h2>
@@ -188,7 +321,7 @@
                     </div>
                     <form class="terminal-body">
                         <div class="form-group">
-                            <label>$ input user_email</label>
+                            <label>$ destination: dimitri.gay18122001@gmail.com</label>
                             <input type="email" placeholder="votre@email.com">
                         </div>
                         <div class="form-group">
@@ -200,27 +333,21 @@
                 </div>
 
                 <footer>
-                    <p>MMI 2025 • HTML CSS JS ONLY</p>
-                    <div class="socials">
-                        <a href="#">LN</a>
-                        <a href="#">GH</a>
-                        <a href="#">BE</a>
-                    </div>
+                    <p>DIMITRI GAY • LE BOURGET DU LAC • 2025</p>
+					<div class="socials">
+						<!-- Mets tes vrais liens ici -->
+						<a href="https://www.linkedin.com/in/ton-profil" target="_blank">LINKEDIN</a>
+						<a href="mailto:dimitri.gay18122001@gmail.com">MAIL</a>
+						<a href="#">CV PDF</a>
+					</div>
                 </footer>
             </div>
         </section>
 
     </main>
-
-<!-- 1. D'ABORD les librairies externes -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    
-    <!-- Utilise ce lien CDN plus récent et stable pour Lenis -->
-    <!--<script src="https://unpkg.com/lenis@1.0.42/dist/lenis.min.js"></script>-->
 	<script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
-    
-    <!-- 2. ENSUITE ton script à toi -->
     <script src="script.js"></script>
 </body>
 </html>

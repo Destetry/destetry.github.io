@@ -1,9 +1,9 @@
-/* VARIABLES & RESET */
+
 :root {
     --bg-color: #1A1512;
-    --accent-color: #FF9F43; /* Orange Café */
-    --secondary-color: #00FFFF; /* Cyan Digital */
-    --text-color: #F8EFBA; /* Crème */
+    --accent-color: #FF9F43; 
+    --secondary-color: #00FFFF; 
+    --text-color: #F8EFBA; 
     --font-pixel: 'VT323', monospace;
     --font-code: 'Fira Code', monospace;
 }
@@ -18,16 +18,14 @@ body {
     background-color: var(--bg-color);
     color: var(--text-color);
     font-family: var(--font-code);
-    overflow-x: hidden; /* Important pour éviter le scroll horizontal */
+    overflow-x: hidden; 
 }
 
-/* UTILITAIRES */
 .accent { color: var(--accent-color); }
 .highlight { color: var(--secondary-color); }
 .pink { color: #ff00ff; }
 .center { text-align: center; }
 
-/* TEXTURE NOISE */
 .noise-overlay {
     position: fixed;
     top: 0; left: 0; width: 100%; height: 100%;
@@ -37,7 +35,6 @@ body {
     background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
 }
 
-/* INTRO SEQUENCE */
 #intro-overlay {
     position: fixed;
     inset: 0;
@@ -73,7 +70,7 @@ body {
 }
 
 #wake-btn {
-    display: none; /* Caché au départ */
+    display: none; 
     margin-top: 40px;
     background: transparent;
     border: 2px solid var(--secondary-color);
@@ -97,12 +94,11 @@ body {
     box-shadow: none;
 }
 
-/* MAIN CONTENT */
+
 #main-content {
-    opacity: 0; /* Caché au départ */
+    opacity: 0; 
 }
 
-/* NAVIGATION */
 nav {
     position: fixed;
     top: 0; width: 100%;
@@ -135,7 +131,6 @@ nav {
     color: var(--bg-color);
 }
 
-/* HERO SECTION */
 .hero {
     height: 100vh;
     display: flex;
@@ -164,7 +159,7 @@ nav {
 
 .hero-content h1 {
     font-family: var(--font-pixel);
-    font-size: clamp(3rem, 10vw, 8rem); /* Responsive text */
+    font-size: clamp(3rem, 10vw, 8rem); 
     line-height: 1;
     margin-bottom: 20px;
     text-shadow: 0 0 20px rgba(0,0,0,0.8);
@@ -182,7 +177,6 @@ nav {
     60% {transform: translateY(-5px);}
 }
 
-/* SECTIONS GENERIQUES */
 .section {
     padding: 100px 20px;
     border-top: 1px solid #333;
@@ -207,7 +201,6 @@ nav {
     align-items: center;
 }
 
-/* ABOUT */
 .about-text p {
     font-size: 1.2rem;
     line-height: 1.6;
@@ -248,7 +241,6 @@ nav {
     color: var(--secondary-color);
 }
 
-/* PROJECTS GRID */
 .projects-header {
     display: flex;
     justify-content: space-between;
@@ -324,7 +316,6 @@ nav {
     margin-bottom: 5px;
 }
 
-/* SKILLS RPG */
 .rpg-box {
     background: #0f0c0b;
     border: 1px solid #333;
@@ -361,7 +352,6 @@ nav {
 .accent-bg { background: var(--accent-color); color: var(--accent-color); }
 .pink-bg { background: #ff00ff; color: #ff00ff; }
 
-/* CONTACT */
 .terminal-window {
     max-width: 600px;
     margin: 0 auto;
@@ -453,13 +443,12 @@ footer {
 .socials a { color: #666; text-decoration: none; }
 .socials a:hover { color: var(--accent-color); }
 
-/* EASTER EGG */
 #easter-egg {
     position: fixed;
     inset: 0;
     background: rgba(0,0,0,0.95);
     z-index: 5000;
-    display: none; /* hidden */
+    display: none; 
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -470,10 +459,40 @@ footer {
 .egg-content .emoji { font-size: 5rem; display: block; margin-bottom: 20px; animation: bounce 1s infinite; }
 .egg-content h2 { font-size: 3rem; margin-bottom: 10px; }
 
-/* RESPONSIVE */
 @media (max-width: 768px) {
     .grid-2 { grid-template-columns: 1fr; }
     .hero-content h1 { font-size: 4rem; }
     .projects-header { flex-direction: column; align-items: flex-start; gap: 20px; }
     .filters button { margin-left: 0; margin-right: 15px; }
+}
+
+.logo-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Espace entre tasse et nom */
+}
+
+.nav-icon {
+    width: 30px;
+    height: 30px;
+    color: var(--accent-color);
+    animation: pulse 3s infinite;
+}
+
+.logo-text {
+    font-family: var(--font-pixel);
+    font-size: 2rem;
+    color: var(--accent-color);
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+}
+
+.project-desc {
+    font-size: 0.8rem; 
+    color: #888; 
+    margin-top: 5px;
+    font-family: var(--font-code);
 }
