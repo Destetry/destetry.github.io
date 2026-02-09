@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio MMI | Digital Brew</title>
+    
+    <!-- Polices Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;600&family=VT323&display=swap" rel="stylesheet">
+    
+    <!-- Ton CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- TEXTURE DE BRUIT (Overlay global) -->
+    <div class="noise-overlay"></div>
+
+    <!-- SÉQUENCE D'INTRO (Loader) -->
+    <div id="intro-overlay">
+        <div class="scanlines"></div>
+        
+        <div class="loader-content">
+            <!-- Logo SVG -->
+            <div class="logo-container">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M2,21H20V19H2M20,8H18V5H20M20,3H4V13A4,4 0 0,0 8,17H14A4,4 0 0,0 18,13V10H20A2,2 0 0,0 22,8V5C22,3.89 21.1,3 20,3Z" />
+                </svg>
+            </div>
+            <p class="loading-text">BREWING IDEAS... <span id="counter">0</span>%</p>
+        </div>
+
+        <button id="wake-btn">[ WAKE UP ]</button>
+    </div>
+
+    <!-- EASTER EGG (Konami) -->
+    <div id="easter-egg">
+        <div class="egg-content">
+            <span class="emoji">👾</span>
+            <h2>KONAMI CODE ACTIVATED</h2>
+            <p>Full Stack Dev Mode: UNLOCKED</p>
+        </div>
+    </div>
+
+    <!-- CONTENU PRINCIPAL -->
+    <main id="main-content">
+        
+        <!-- Navigation -->
+        <nav>
+            <div class="logo">JOHN.MMI</div>
+            <a href="#contact" class="cta-nav">Discuter</a>
+        </nav>
+
+        <!-- Header Hero -->
+        <section class="hero">
+            <div class="hero-bg">
+                <!-- Remplace cette image par ta vidéo en background plus tard -->
+                <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=2070&auto=format&fit=crop" alt="Background">
+            </div>
+            <div class="hero-content">
+                <h1>CRÉATIF <span class="accent">///</span> DIGITAL</h1>
+                <p id="typewriter"></p>
+                <div class="scroll-indicator">↓</div>
+            </div>
+        </section>
+
+        <!-- Profil / About -->
+        <section class="section about">
+            <div class="container grid-2">
+                <div class="about-text">
+                    <h2 class="section-title">01. PROFIL_</h2>
+                    <p>Étudiant en dernière année de <strong class="highlight">BUT MMI</strong>. Je ne choisis pas entre le code et la vidéo : je fais les deux. Mon approche est simple : raconter des histoires visuelles soutenues par une technique web solide.</p>
+                    <div class="tags">
+                        <span>Vidéo</span>
+                        <span>Motion</span>
+                        <span class="highlight-tag">Front-End</span>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="video-frame">
+                        <span>PLAY SHOWREEL 2025 ▶</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projets -->
+        <section class="section projects">
+            <div class="container">
+                <div class="projects-header">
+                    <h2 class="section-title">02. SELECT MISSION_</h2>
+                    <div class="filters">
+                        <button class="active">[ ALL ]</button>
+                        <button>[ VIDEO ]</button>
+                        <button>[ WEB ]</button>
+                    </div>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Projet 1 -->
+                    <article class="project-card">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1000&auto=format&fit=crop" alt="Projet 1">
+                            <div class="overlay"></div>
+                        </div>
+                        <h3>Neon City Doc</h3>
+                        <p>PREMIERE PRO • DOCUMENTAIRE</p>
+                    </article>
+
+                    <!-- Projet 2 -->
+                    <article class="project-card">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1000&auto=format&fit=crop" alt="Projet 2">
+                            <div class="overlay"></div>
+                        </div>
+                        <h3>Dev Portfolio</h3>
+                        <p>JS VANILLA • CSS</p>
+                    </article>
+
+                    <!-- Projet 3 -->
+                    <article class="project-card">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1000&auto=format&fit=crop" alt="Projet 3">
+                            <div class="overlay"></div>
+                        </div>
+                        <h3>Cyber Sec Camp</h3>
+                        <p>COM • BRANDING</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Compétences (Stats RPG) -->
+        <section class="section skills">
+            <div class="container">
+                <h2 class="section-title center">03. STATS_</h2>
+                <div class="rpg-box">
+                    
+                    <div class="stat-row">
+                        <div class="stat-info">
+                            <span class="highlight">VIDEO EDITING</span>
+                            <span>LVL. 90</span>
+                        </div>
+                        <div class="stat-bar-bg">
+                            <div class="stat-bar-fill highlight-bg" style="width: 90%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="stat-row">
+                        <div class="stat-info">
+                            <span class="accent">CREATIVE CODING</span>
+                            <span>LVL. 75</span>
+                        </div>
+                        <div class="stat-bar-bg">
+                            <div class="stat-bar-fill accent-bg" style="width: 75%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="stat-row">
+                        <div class="stat-info">
+                            <span class="pink">COMMUNICATION</span>
+                            <span>LVL. 85</span>
+                        </div>
+                        <div class="stat-bar-bg">
+                            <div class="stat-bar-fill pink-bg" style="width: 85%;"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact (Terminal) -->
+        <section id="contact" class="section contact">
+            <div class="container">
+                <h2 class="section-title center">04. SEND_DATA_</h2>
+                
+                <div class="terminal-window">
+                    <div class="terminal-header">
+                        <div class="dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <span class="terminal-title">bash — contact-form</span>
+                    </div>
+                    <form class="terminal-body">
+                        <div class="form-group">
+                            <label>$ input user_email</label>
+                            <input type="email" placeholder="votre@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label>$ input message</label>
+                            <textarea rows="4" placeholder="Tapez votre message ici..."></textarea>
+                        </div>
+                        <button type="submit" class="terminal-btn">> EXECUTE SEND</button>
+                    </form>
+                </div>
+
+                <footer>
+                    <p>MMI 2025 • HTML CSS JS ONLY</p>
+                    <div class="socials">
+                        <a href="#">LN</a>
+                        <a href="#">GH</a>
+                        <a href="#">BE</a>
+                    </div>
+                </footer>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- IMPORT DES SCRIPTS (CDN) -->
+    <!-- GSAP (Animation) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <!-- Lenis (Smooth Scroll) -->
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.29/dist/lenis.min.js"></script>
+    
+    <!-- Ton Script -->
+    <script src="script.js"></script>
+</body>
+</html>
