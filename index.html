@@ -3,343 +3,695 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio MMI | Digital Brew</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;600&family=VT323&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+
+    <meta
+        name="description"
+        content="CV de Dimitri Gay — Audiovisuel, communication et numérique"
+    >
+
+    <title>Dimitri Gay — CV</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/variables.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="css/structure-cv.css">
+	<link rel="stylesheet" href="css/cv.css">
+	<link rel="stylesheet" href="css/responsive.css">
 </head>
+
 <body>
-	<div class="ambient-light light-1"></div>
-	<div class="ambient-light light-2"></div>
-	<div class="hud-decoration bottom-right">SYS.READY // V.2.0</div>
-	<div class="hud-line-left"></div>
-	<div class="hud-decoration top-left">
-		<span class="blink-rec">●</span> REC
-	</div>
-	<div id="hud-logo">
-		<svg viewBox="0 0 24 24" fill="currentColor">
-			<path d="M2,21H20V19H2M20,8H18V5H20M20,3H4V13A4,4 0 0,0 8,17H14A4,4 0 0,0 18,13V10H20A2,2 0 0,0 22,8V5C22,3.89 21.1,3 20,3Z" />
-		</svg>
-	</div>
-	<a href="#contact" class="hud-contact top-right">CONTACT_LINK</a>
-    <div class="noise-overlay"></div>
 
-    <div id="intro-overlay">
-        <div class="scanlines"></div>
-        <div class="loader-content">
-            <div class="logo-container">
-                <svg viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M2,21H20V19H2M20,8H18V5H20M20,3H4V13A4,4 0 0,0 8,17H14A4,4 0 0,0 18,13V10H20A2,2 0 0,0 22,8V5C22,3.89 21.1,3 20,3Z" />
-                </svg>
-            </div>
-            <p class="loading-text">BREWING IDEAS... <span id="counter">0</span>%</p>
-        </div>
-        <button id="wake-btn">[ WAKE UP ]</button>
+<header class="site-header">
+    <div class="page">
+
+        <a href="index.html" class="logo">
+            DIMITRI GAY
+        </a>
+
+        <nav class="navigation" aria-label="Navigation principale">
+            <a href="cv.html" class="active">CV</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
     </div>
+</header>
 
-    <div id="easter-egg">
-        <div class="egg-content">
-            <span class="emoji">👾</span>
-            <h2>KONAMI CODE ACTIVATED</h2>
-            <p>GOD MODE: ENABLED</p> 
-        </div>
-    </div>
+<div class="circuits-background" aria-hidden="true">
+		<img class="circuit circuit--left circuit--1"
+			 src="images/circuits/Asset-1.svg" alt="">
 
-    <main id="main-content">
-        <section class="hero">
-			<div class="hero-bg">
-				<img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=2070&auto=format&fit=crop" alt="Background">
-			</div>
-			<div class="hero-content">
-				<h1 class="glitch-effect" data-text="DIMITRI GAY">DIMITRI <span class="accent">GAY</span></h1>
-				<p id="typewriter" class="typewriter-text"></p>
-				<div class="scroll-indicator">↓</div>
-			</div>
-		</section>
+		<img class="circuit circuit--left circuit--2"
+			 src="images/circuits/Asset-2.svg" alt="">
 
-		<section class="section about">
-			<div class="container grid-2">
-				<div class="about-text">
-					<h2 class="section-title glitch-effect" data-text="01. PROFIL_">01. PROFIL_</h2>
-					<p>
-						Actuellement en alternance (Communication Externe) et fin de <strong class="highlight">BUT MMI</strong>. 
-						Mon parcours est atypique : après un Bac Scientifique couplé à une formation aux <span class="pink">Beaux-Arts</span> (pratique hebdomadaire durant 3 ans), j'ai transité par l'ingénierie (INSA) avant de trouver ma voie dans la création numérique.
-					</p>
-					<p style="margin-top: 15px;">
-						<strong class="accent">Ancien Pompier Volontaire</strong>, j'ai dû mettre cette activité en pause pour mes études, mais j'en garde une gestion du stress infaillible et un fort esprit d'équipe.
-					</p>
-					<p style="margin-top: 15px; font-size: 0.9rem; color: #888;">
-						<em>Mon objectif ? Mettre ma technique au service de l'image et du message.</em>
-					</p>
-					<div class="tags" style="margin-top: 20px;">
-						<span>Vidéaste</span>
-						<span>Drone</span>
-						<span class="highlight-tag">Communication</span>
-						<span class="pink" style="border-color: #ff00ff;">Créativité</span>
-					</div>
-				</div>
-				<div class="about-visual">
-					<div class="video-frame">
-						<span>DÉCOUVRIR MON UNIVERS ▶</span>
-					</div>
-				</div>
-			</div>
-		</section>
+		<img class="circuit circuit--left circuit--3"
+			 src="images/circuits/Asset-3.svg" alt="">
 
-		<section class="section projects">
-			<div class="container">
-				<div class="projects-header">
-					<h2 class="section-title glitch-effect" data-text="02. RÉALISATIONS_">02. RÉALISATIONS_</h2>
-					<div class="filters">
-						<button class="filter-btn active" data-filter="all">[ ALL ]</button>
-						<button class="filter-btn" data-filter="video">[ VIDÉO/MOTION ]</button>
-						<button class="filter-btn" data-filter="design">[ PRINT/DESIGN ]</button>
-					</div>
-				</div>
+		<img class="circuit circuit--left circuit--4"
+			 src="images/circuits/Asset-4.svg" alt="">
 
-				<div class="projects-grid">
-					<article class="project-card" data-category="video" data-video-id="oVgsGdsriuw">
-						<div class="card-image">
-							<img src="https://images.unsplash.com/photo-1473968512647-3e447244af8f?q=80&w=1000&auto=format&fit=crop" alt="Drone Mison">
-							<div class="overlay"></div>
-						</div>
-						<h3>Mison : Vue du Ciel</h3>
-						<p class="highlight">VIDÉO • DRONE • MONTAGE</p>
-						<p class="project-desc">Production complète vidéo promotionnelle (Été 2025).</p>
-					</article>
-					<article class="project-card" data-category="video" data-video-id="aaAwhDbgmns">
-						<div class="card-image">
-							<img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1000&auto=format&fit=crop" alt="Rétrospective">
-							<div class="overlay"></div>
-						</div>
-						<h3>Rétrospective 2025</h3>
-						<p class="highlight">MOTION DESIGN • MONTAGE</p>
-						<p class="project-desc">Vidéo bilan pour le Département 04. Rythme dynamique.</p>
-					</article>
-					<article class="project-card" data-category="video" data-video-id="znH4ZvZotqE">
-						<div class="card-image">
-							<img src="https://images.unsplash.com/photo-1565610237028-e76742541f72?q=80&w=1000&auto=format&fit=crop" alt="Durance Vélo">
-							<div class="overlay"></div>
-						</div>
-						<h3>Tracé Durance 3D</h3>
-						<p class="accent">BLENDER • AFTER EFFECTS</p>
-						<p class="project-desc">Visualisation 3D d'une piste cyclable sur fond réel.</p>
-					</article>
-					<article class="project-card" data-category="design">
-						<div class="card-image">
-							<img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1000&auto=format&fit=crop" alt="Infographie Budget">
-							<div class="overlay"></div>
-						</div>
-						<h3>Budget Citoyen</h3>
-						<p class="pink">INDESIGN • INFOGRAPHIE</p>
-						<p class="project-desc">Vulgarisation de données financières pour le mag du Département.</p>
-					</article>
-					<article class="project-card" data-category="design">
-						<div class="card-image">
-							<img src="https://images.unsplash.com/photo-1509343256512-d77a5cb3791b?q=80&w=1000&auto=format&fit=crop" alt="Musée PHI">
-							<div class="overlay"></div>
-						</div>
-						<h3>Plaquette Musée PHI</h3>
-						<p class="pink">MISE EN PAGE • PRINT</p>
-						<p class="project-desc">Programme trimestriel Oct-Déc 2025. Design épuré.</p>
-					</article>
-					<article class="project-card" data-category="video" data-video-id="Xigv-PAn-Dk">
-						<div class="card-image">
-							<img src="https://images.unsplash.com/photo-1598550476439-6847785fcea6?q=80&w=1000&auto=format&fit=crop" alt="Interview Pompier">
-							<div class="overlay"></div>
-						</div>
-						<h3>Portrait Insolite</h3>
-						<p class="accent">INTERVIEW • ÉTALONNAGE</p>
-						<p class="project-desc">Portrait "Prêtre-Pompier". Gestion lumière et son.</p>
-					</article>
-					<article class="project-card" data-category="video" data-video-id="9hhGngDBhE0">
-						<div class="card-image">
-							<img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?q=80&w=1000&auto=format&fit=crop" alt="Court Métrage">
-							<div class="overlay"></div>
-						</div>
-						<h3>Je me souviens</h3>
-						<p class="highlight">SCÉNARIO • RÉALISATION</p>
-						<p class="project-desc">Court-métrage artistique. Expression personnelle.</p>
-					</article>
-				</div>
-			</div>
-		</section>
-		
-		<section class="section skills bg-circuit">
-			<div id="pcb-bg"></div>
-			<div class="container">
-				<h2 class="section-title glitch-effect" data-text="03. ARSENAL_">03. ARSENAL_</h2>
-				<div class="inventory-grid">
-					<div class="inv-category">
-						<h3 class="inv-title"><span class="highlight">></span> LOGICIELS</h3>
-						<div class="inv-items">
-							<div class="inv-item">Premiere Pro</div>
-							<div class="inv-item">After Effects</div>
-							<div class="inv-item">DaVinci Resolve</div>
-							<div class="inv-item">Blender (3D)</div>
-							<div class="inv-item">Photoshop</div>
-							<div class="inv-item">Illustrator</div>
-							<div class="inv-item">InDesign</div>
-							<div class="inv-item">WordPress</div>
-							<div class="inv-item">Office 365</div>
-						</div>
-					</div>
-					<div class="inv-category">
-						<h3 class="inv-title"><span class="accent">></span> HARD SKILLS</h3>
-						<ul class="pixel-list">
-							<li>Montage & Étalonnage</li>
-							<li>Pilotage Drone (Vue aérienne)</li>
-							<li>Motion Design & VFX</li>
-							<li>Prise de vue Caméra</li>
-							<li>Identité Visuelle & Print</li>
-							<li>Rédaction Web & SEO</li>
-						</ul>
-					</div>
-					<div class="inv-category">
-						<h3 class="inv-title"><span class="pink">></span> HUMAIN</h3>
-						<ul class="pixel-list">
-							<li>Gestion du stress <span class="comment">// Exp. Pompier</span></li>
-							<li>Esprit d'équipe</li>
-							<li>Rigueur scientifique <span class="comment">// Exp. INSA</span></li>
-							<li>Autonomie & Adaptabilité</li>
-							<li>Curiosité technique</li>
-						</ul>
-					</div>
-					<div class="inv-category status-box">
-						<h3 class="inv-title">> STATUS</h3>
-						<div class="status-row">
-							<span class="label">LANGUE:</span>
-							<span class="value">Anglais (C1 - Courant)</span>
-						</div>
-						<div class="status-row">
-							<span class="label">LANGUE:</span>
-							<span class="value">Français (Natif)</span>
-						</div>
-						<div class="status-row">
-							<span class="label">MOBILITÉ:</span>
-							<span class="value highlight">Permis B + Véhicule</span>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		
-		<section class="section timeline">
-			<div class="container" style="max-width: 800px;">
-				<h2 class="section-title glitch-effect" data-text="04. TIMELINE_">04. TIMELINE_</h2>
-				<div style="border-left: 2px solid #333; padding-left: 30px; margin-left: 20px;">
-					<div style="margin-bottom: 40px; position: relative;">
-						<div style="position: absolute; left: -39px; top: 0; width: 16px; height: 16px; background: var(--secondary-color); border-radius: 50%; box-shadow: 0 0 10px var(--secondary-color);"></div>
-						<h3 class="font-pixel text-xl text-white">ALTERNANCE COMMUNICATION</h3>
-						<span class="highlight">2025 - 2026 • DÉPARTEMENT 04</span>
-						<p style="margin-top: 10px; color: #aaa;">Service Communication Externe. (Suite logique de mon stage de 2ème année).</p>
-					</div>
-					<div style="margin-bottom: 40px; position: relative;">
-						<div style="position: absolute; left: -39px; top: 0; width: 16px; height: 16px; background: var(--accent-color); border-radius: 50%;"></div>
-						<h3 class="font-pixel text-xl text-white">VIDÉASTE DRONE</h3>
-						<span class="accent">ÉTÉ 2025 • MAIRIE DE MISON</span>
-						<p style="margin-top: 10px; color: #aaa;">Production d'une vidéo promotionnelle de la commune (tournage drone & montage).</p>
-					</div>
-					<div style="margin-bottom: 40px; position: relative;">
-						<div style="position: absolute; left: -39px; top: 0; width: 16px; height: 16px; background: #fff; border-radius: 50%;"></div>
-						<h3 class="font-pixel text-xl text-white">BUT MMI</h3>
-						<span style="color: #666; font-size: 0.9rem;">2023 - 2026 • IUT CHAMBÉRY</span>
-						<p style="margin-top: 10px; color: #aaa;">Formation polyvalente. Job étudiant agent communal (Été 2024).</p>
-					</div>
-					<div style="margin-bottom: 40px; position: relative;">
-						<div style="position: absolute; left: -39px; top: 0; width: 16px; height: 16px; background: #555; border-radius: 50%;"></div>
-						<h3 class="font-pixel text-xl text-white">INSA TOULOUSE</h3>
-						<span style="color: #666; font-size: 0.9rem;">SEPT 2020 - JUIN 2023</span>
-						<p style="margin-top: 10px; color: #aaa;">Cursus Ingénieur. Acquisition de rigueur scientifique.</p>
-					</div>
-					<div style="margin-bottom: 40px; position: relative;">
-						<div style="position: absolute; left: -39px; top: 0; width: 16px; height: 16px; background: #333; border-radius: 50%;"></div>
-						<h3 class="font-pixel text-xl text-white">BAC STI2D & BEAUX-ARTS</h3>
-						<span style="color: #666; font-size: 0.9rem;">JUSQU'EN 2020</span>
-						<p style="margin-top: 10px; color: #aaa;">Bac mention Très Bien. Pratique artistique hebdomadaire aux Beaux-Arts durant les années lycée.</p>
-					</div>
-				</div>
-			</div>
-		</section>
-		
-        <section id="contact" class="section contact">
-            <div class="container">
-                <h2 class="section-title glitch-effect" data-text="05. SEND_DATA_">05. SEND_DATA_</h2>
-                <div class="terminal-window">
-                    <div class="terminal-header">
-                        <div class="dots">
-                            <span class="dot red"></span>
-                            <span class="dot yellow"></span>
-                            <span class="dot green"></span>
-                        </div>
-                        <span class="terminal-title">bash — contact-form</span>
-                    </div>
-                    <form class="terminal-body">
-                        <div class="form-group">
-                            <label>$ destination: dimitri.gay18122001@gmail.com</label>
-                            <input type="email" placeholder="votre@email.com">
-                        </div>
-                        <div class="form-group">
-                            <label>$ input message</label>
-                            <textarea rows="4" placeholder="Tapez votre message ici..."></textarea>
-                        </div>
-                        <button type="submit" class="terminal-btn">> EXECUTE SEND</button>
-                    </form>
-                </div>
-                <footer>
-                    <p>DIMITRI GAY • LE BOURGET DU LAC • 2025</p>
-					<div class="socials">
-						<a href="https://www.linkedin.com/in/ton-profil" target="_blank">LINKEDIN</a>
-						<a href="mailto:dimitri.gay18122001@gmail.com">MAIL</a>
-						<a href="#">CV PDF</a>
-					</div>
-                </footer>
-            </div>
-        </section>
-    </main>
+		<img class="circuit circuit--left circuit--5"
+			 src="images/circuits/Asset-5.svg" alt="">
 
-	<div id="konami-bar">
-		<div class="sticky-note">↑ ↑ ↓ ↓ ← → ← → B A</div>
-		<div class="controller-pad">
-			<div class="d-pad">
-				<button class="k-btn arrow" data-key="ArrowUp">▲</button>
-				<div class="d-row">
-					<button class="k-btn arrow" data-key="ArrowLeft">◀</button>
-					<button class="k-btn arrow" data-key="ArrowDown">▼</button>
-					<button class="k-btn arrow" data-key="ArrowRight">▶</button>
-				</div>
-			</div>
-			<div class="action-btns">
-				<button class="k-btn circle b-btn" data-key="b">B</button>
-				<button class="k-btn circle a-btn" data-key="a">A</button>
-			</div>
-		</div>
-	</div>
+		<img class="circuit circuit--left circuit--6"
+			 src="images/circuits/Asset-6.svg" alt="">
+
+		<img class="circuit circuit--left circuit--7"
+			 src="images/circuits/Asset-7.svg" alt="">
+
+		<img class="circuit circuit--left circuit--8"
+			 src="images/circuits/Asset-8.svg" alt="">
+			 
+		<img class="circuit circuit--right circuit--1C"
+			 src="images/circuits/Asset-1C.svg" alt="">
+
+		<img class="circuit circuit--right circuit--2C"
+			 src="images/circuits/Asset-2C.svg" alt="">
+
+		<img class="circuit circuit--right circuit--3C"
+			 src="images/circuits/Asset-3C.svg" alt="">
+
+		<img class="circuit circuit--right circuit--4C"
+			 src="images/circuits/Asset-4C.svg" alt="">
+
+		<img class="circuit circuit--right circuit--5C"
+			 src="images/circuits/Asset-5C.svg" alt="">
+
+		<img class="circuit circuit--right circuit--6C"
+			 src="images/circuits/Asset-6C.svg" alt="">
+
+		<img class="circuit circuit--right circuit--7C"
+			 src="images/circuits/Asset-7C.svg" alt="">
+
+		<img class="circuit circuit--right circuit--8C"
+			 src="images/circuits/Asset-8C.svg" alt="">
+</div>
+<main class="page cv-page">
 	
-	<!-- Modal Vidéo -->
-	<div id="video-modal" class="modal">
-		<div class="modal-overlay"></div>
-		<div class="modal-content glass">
-			<button class="modal-close-btn">[ CLOSE_X ]</button>
-			<div class="video-container">
-				<iframe 
-					id="modal-iframe" 
-					src="" 
-					frameborder="0" 
-					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-					allowfullscreen>
-				</iframe>
+    <!-- =========================
+         IDENTITÉ
+    ========================== -->
+
+    <section class="intro-layout" aria-label="Présentation et contact">
+
+		<div class="identity-panel identity-panel--dark">
+			<p class="eyebrow">CURRICULUM VITAE</p>
+
+			<h1>Dimitri<br>GAY</h1>
+
+			<p class="identity-title">
+				Création audiovisuelle,<br>
+				communication &amp; numérique
+			</p>
+		</div>
+
+		<div class="contact-panel">
+			<h2 class="eyebrow">Contact</h2>
+
+			<address class="contact-list">
+				<a href="mailto:dimitri.gay18122001@gmail.com">
+					dimitri.gay18122001@gmail.com
+				</a>
+
+				<a href="tel:+33613134817">
+					06 13 48 17 69
+				</a>
+
+				<span>Toulouse</span>
+				<span>Permis B</span>
+			</address>
+		</div>
+
+	</section>
+
+
+    <!-- =========================
+         PROFIL
+    ========================== -->
+
+    <section class="cv-section">
+		<div class="section-heading">
+			<span class="section-number">01</span>
+			<h2>Profil</h2>
+		</div>
+
+		<div class="profile-content">
+			<p class="profile-summary">
+				Diplômé d'un BUT Métiers du Multimédia et de l’Internet, je possède un profil polyvalent mêlant audiovisuel, communication, création graphique et développement web.
+			</p>
+
+			<p class="profile-description">
+				Je conçois et produis des contenus numériques, de la captation et du montage vidéo à la création graphique, la communication et le développement de sites web.
+			</p>
+		</div>
+	</section>
+
+
+    <!-- =========================
+         EXPÉRIENCES
+    ========================== -->
+
+    <section class="cv-section">
+		<div class="section-heading">
+			<span class="section-number">02</span>
+			<h2>Expériences</h2>
+		</div>
+
+
+        <div class="experience-grid">
+
+            <article class="experience-item">
+                <div class="experience-header">
+                    <span class="experience-date">2025 — 2026</span>
+                    <span class="experience-type">ALTERNANCE</span>
+                </div>
+
+                <h3>Communication Externe</h3>
+
+                <p class="experience-organization">
+                    Département des Alpes-de-Haute-Provence
+                </p>
+
+                <p>
+                    Participation aux projets de communication du Département,
+                    avec notamment de la production audiovisuelle et graphique.
+                </p>
+
+            </article>
+
+
+            <article class="experience-item">
+				<div class="experience-header">
+					<span class="experience-date">ÉTÉ 2025</span>
+                    <span class="experience-type">AUDIOVISUEL</span>
+                </div>
+
+                <h3>Production audiovisuelle & drone</h3>
+
+                <p class="experience-organization">
+                    Mairie de Mison
+                </p>
+
+                <p>
+                    Réalisation d’une vidéo promotionnelle de la commune :
+                    prises de vues aériennes, tournage et montage.
+                </p>
+
+            </article>
+
+
+            <article class="experience-item">
+                <div class="experience-header">
+                    <span class="experience-date">MAI — JUIN 2025</span>
+                    <span class="experience-type">STAGE</span>
+                </div>
+
+                <h3>Service Communication</h3>
+
+                <p class="experience-organization">
+                    Département des Alpes-de-Haute-Provence
+                </p>
+
+                <p>
+                    Participation à différents projets de communication
+                    et de création de contenus.
+                </p>
+
+            </article>
+
+
+            <article class="experience-item">
+                <div class="experience-header">
+                    <span class="experience-date">JUILLET 2024</span>
+                    <span class="experience-type">JOB ÉTUDIANT</span>
+                </div>
+
+                <h3>Agent communal</h3>
+
+                <p class="experience-organization">
+                    Mairie de Mison
+                </p>
+
+            </article>
+			
+			<article class="experience-item">
+				<div class="experience-header">
+					<span class="experience-date">DÉC. 2017 — JANV. 2024</span>
+					<span class="experience-type">ENGAGEMENT</span>
+				</div>
+
+				<h3>Pompier volontaire</h3>
+
+				<p class="experience-organization">
+					SDIS 04 — CIS CHT · Château-Arnoux-Saint-Auban
+				</p>
+
+			</article>
+
+
+            <article class="experience-item">
+                <div class="experience-header">
+                    <span class="experience-date">JUILLET 2022</span>
+                    <span class="experience-type">STAGE</span>
+                </div>
+
+                <h3>Stage ouvrier</h3>
+
+                <p class="experience-organization">
+                    E-Props
+                </p>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         FORMATION
+    ========================== -->
+
+    <section class="cv-section">
+		<div class="section-heading">
+			<span class="section-number">03</span>
+			<h2>Formation</h2>
+		</div>
+
+		<div class="education-grid">
+
+			<article class="education-item">
+				<div class="education-header">
+					<span class="education-date">2023–2026</span>
+					<span class="education-type">BUT MMI</span>
+				</div>
+
+				<h3>Métiers du Multimédia et de l’Internet</h3>
+				<p class="education-organization">
+					IUT de Chambéry
+				</p>
+				<p class="education-description">
+					Diplômé
+				</p>
+			</article>
+
+			<article class="education-item">
+				<div class="education-header">
+					<span class="education-date">2020–2023</span>
+					<span class="education-type">CURSUS INGÉNIEUR</span>
+				</div>
+
+				<h3>Cursus ingénieur</h3>
+				<p class="education-organization">
+					INSA Toulouse
+				</p>
+			</article>
+
+			<article class="education-item">
+				<div class="education-header">
+					<span class="education-date">JUSQU’EN 2020</span>
+					<span class="education-type">BACCALAURÉAT</span>
+				</div>
+
+				<h3>Baccalauréat STI2D</h3>
+				<p class="education-description">
+					Mention Très Bien
+				</p>
+			</article>
+
+			<article class="education-item">
+				<div class="education-header">
+					<span class="education-date">LYCÉE</span>
+					<span class="education-type">PRATIQUE ARTISTIQUE</span>
+				</div>
+
+				<h3>Beaux-Arts</h3>
+				<p class="education-description">
+					Pratique hebdomadaire durant trois années
+				</p>
+			</article>
+
+		</div>
+	</section>
+
+
+    <!-- =========================
+         COMPÉTENCES
+    ========================== -->
+
+    <section class="cv-section">
+		<div class="section-heading">
+			<span class="section-number">04</span>
+			<h2>Compétences</h2>
+		</div>
+
+		<div class="skills-grid">
+
+			<article class="skill-item">
+				<div class="skill-header">
+					<span class="skill-number">01</span>
+					<h3>Audiovisuel</h3>
+				</div>
+
+				<ul class="skill-list">
+					<li>Captation vidéo</li>
+					<li>Photographie</li>
+					<li>Captation audio</li>
+					<li>Montage vidéo</li>
+					<li>Étalonnage</li>
+					<li>Motion Design &amp; VFX</li>
+					<li>3D</li>
+					<li>Pilotage drone</li>
+				</ul>
+			</article>
+
+			<article class="skill-item">
+				<div class="skill-header">
+					<span class="skill-number">02</span>
+					<h3>Communication</h3>
+				</div>
+
+				<ul class="skill-list">
+					<li>Création de contenus</li>
+					<li>Rédaction d’articles</li>
+					<li>Gestion des réseaux sociaux</li>
+					<li>Communication visuelle</li>
+					<li>Infographie</li>
+				</ul>
+			</article>
+
+			<article class="skill-item">
+				<div class="skill-header">
+					<span class="skill-number">03</span>
+					<h3>Graphisme</h3>
+				</div>
+
+				<ul class="skill-list">
+					<li>Création d’affiches</li>
+					<li>Graphisme &amp; illustration</li>
+					<li>Mise en page</li>
+					<li>Print</li>
+				</ul>
+			</article>
+
+			<article class="skill-item">
+				<div class="skill-header">
+					<span class="skill-number">04</span>
+					<h3>Web &amp; numérique</h3>
+				</div>
+
+				<ul class="skill-list">
+					<li>Création de sites web</li>
+					<li>Gestion de sites web</li>
+					<li>WordPress</li>
+					<li>Intégration de contenus</li>
+				</ul>
+			</article>
+
+			<article class="skill-item">
+				<div class="skill-header">
+					<span class="skill-number">05</span>
+					<h3>Régie</h3>
+				</div>
+
+				<ul class="skill-list">
+					<li>Régie son</li>
+					<li>Régie lumière</li>
+					<li>Régie multicaméra</li>
+				</ul>
+			</article>
+
+		</div>
+	</section>
+
+
+    <!-- =========================
+         OUTILS
+    ========================== -->
+
+    <!-- LOGICIELS -->
+	<section class="cv-section">
+		<div class="section-heading">
+			<span class="section-number">05</span>
+			<h2>Logiciels</h2>
+		</div>
+
+		<div class="software-grid">
+
+			<button class="software-card" type="button"
+					data-title="Photoshop"
+					data-description="Retouche photo et création graphique.">
+				<img src="images/logos/photoshop.svg" alt="">
+				<span class="software-name">Photoshop</span>
+			</button>
+
+			<button class="software-card" type="button"
+					data-title="Lightroom"
+					data-description="Développement et gestion de photographies.">
+				<img src="images/logos/lightroom.svg" alt="">
+				<span class="software-name">Lightroom</span>
+			</button>
+
+			<button class="software-card" type="button"
+					data-title="Illustrator"
+					data-description="Création graphique vectorielle et illustration.">
+				<img src="images/logos/illustrator.svg" alt="">
+				<span class="software-name">Illustrator</span>
+			</button>
+
+			<button class="software-card" type="button"
+					data-title="InDesign"
+					data-description="Mise en page de documents et publications.">
+				<img src="images/logos/indesign.svg" alt="">
+				<span class="software-name">InDesign</span>
+			</button>
+
+			<button class="software-card" type="button"
+					data-title="Premiere Pro"
+					data-description="Montage et postproduction vidéo.">
+				<img src="images/logos/premiere.svg" alt="">
+				<span class="software-name">Premiere Pro</span>
+			</button>
+
+			<button class="software-card" type="button"
+					data-title="After Effects"
+					data-description="Animation graphique et effets visuels.">
+				<img src="images/logos/after.svg" alt="">
+				<span class="software-name">After Effects</span>
+			</button>
+
+			<button class="software-card" type="button"
+					data-title="DaVinci Resolve"
+					data-description="Montage vidéo, étalonnage et postproduction.">
+				<img src="images/logos/davinci.svg" alt="">
+				<span class="software-name">DaVinci Resolve</span>
+			</button>
+
+			<button class="software-card" type="button"
+					data-title="Blender"
+					data-description="Modélisation, animation et rendu 3D.">
+				<img src="images/logos/blender.svg" alt="">
+				<span class="software-name">Blender</span>
+			</button>
+
+			<button class="software-card" type="button"
+					data-title="Traitement de texte"
+					data-description="Rédaction et mise en forme de documents.">
+				<img src="images/logos/word.svg" alt="">
+				<span class="software-name">Traitement de texte</span>
+			</button>
+
+		</div>
+
+		<div class="software-description" aria-live="polite" >
+			<div class="software-description-content">
+				<h3></h3>
+				<p></p>
 			</div>
 		</div>
-	</div>
+	</section>
+	<!-- DÉVELOPPEMENT WEB -->
+	<section class="cv-section">
+		<div class="section-heading">
+			<span class="section-number">06</span>
+			<h2>Développement web</h2>
+		</div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
-    <script src="script.js"></script>
-    <script src="konami.js"></script>
+		<div class="software-grid code-grid">
+
+			<button class="software-card code-card" type="button"
+					data-title="HTML"
+					data-description="Langage de balisage utilisé pour structurer le contenu des pages web.">
+				<img src="images/logos/html.svg" alt="">
+				<span class="software-name">HTML</span>
+			</button>
+
+			<button class="software-card code-card" type="button"
+					data-title="CSS"
+					data-description="Langage de feuilles de style utilisé pour définir la présentation et la mise en page des pages web.">
+				<img src="images/logos/css.svg" alt="">
+				<span class="software-name">CSS</span>
+			</button>
+
+			<button class="software-card code-card" type="button"
+					data-title="JavaScript"
+					data-description="Langage de programmation utilisé pour ajouter de l’interactivité et des comportements dynamiques aux pages web.">
+				<img src="images/logos/js.svg" alt="">
+				<span class="software-name">JavaScript</span>
+			</button>
+
+			<button class="software-card code-card" type="button"
+					data-title="PHP"
+					data-description="Langage de programmation côté serveur, notamment utilisé pour générer des pages dynamiques et traiter des données.">
+				<img src="images/logos/php.svg" alt="">
+				<span class="software-name">PHP</span>
+			</button>
+
+			<button class="software-card code-card" type="button"
+					data-title="MySQL"
+					data-description="Système de gestion de bases de données relationnelles permettant de stocker et de manipuler des données.">
+				<img src="images/logos/mysql.svg" alt="">
+				<span class="software-name">MySQL</span>
+			</button>
+
+		</div>
+
+		<div class="software-description" aria-live="polite" >
+			<div class="software-description-content">
+				<h3></h3>
+				<p></p>
+			</div>
+		</div>
+	</section>
+
+    <!-- LANGUES -->
+	<section class="cv-section">
+		<div class="section-heading">
+			<span class="section-number">07</span>
+			<h2>Langues</h2>
+		</div>
+
+		<div class="languages-list">
+
+			<div class="language-item">
+				<div class="language-flag">
+					<img src="images/flags/fr.svg" alt="Drapeau français">
+				</div>
+
+				<div class="language-name">
+					<strong>Français</strong>
+					<span>Langue maternelle</span>
+				</div>
+
+				<div class="language-level">
+					<strong>—</strong>
+					<div class="level-bar level-native" aria-label="Langue maternelle">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+			</div>
+
+			<div class="language-item">
+				<div class="language-flag">
+					<img src="images/flags/gb.svg" alt="Drapeau britannique">
+				</div>
+
+				<div class="language-name">
+					<strong>Anglais</strong>
+					<span>Niveau courant</span>
+				</div>
+
+				<div class="language-level">
+					<strong>B2</strong>
+					<div class="level-bar level-b2" aria-label="Niveau B2">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+    <!-- INTÉRÊTS -->
+	<section class="cv-section">
+		<div class="section-heading">
+			<span class="section-number">08</span>
+			<h2>Intérêts</h2>
+		</div>
+
+		<div class="interests-container">
+			<div class="interests-grid">
+
+				<button class="interest-card" type="button"
+						data-title="Cinéma"
+						data-description="Intérêt pour le cinéma, la réalisation et la mise en scène audiovisuelle.">
+					<img src="images/icons/cinema.svg" alt="">
+					<span>Cinéma</span>
+				</button>
+
+				<button class="interest-card" type="button"
+						data-title="Théâtre"
+						data-description="Pratique et intérêt pour la scène, le jeu et la mise en scène.">
+					<img src="images/icons/theatre.svg" alt="">
+					<span>Théâtre</span>
+				</button>
+
+				<button class="interest-card" type="button"
+						data-title="Création artistique"
+						data-description="Pratique artistique et intérêt pour l'image, l'illustration et le graphisme.">
+					<img src="images/icons/art.svg" alt="">
+					<span>Création artistique</span>
+				</button>
+
+				<button class="interest-card" type="button"
+						data-title="Audiovisuel"
+						data-description="Intérêt pour la production audiovisuelle, la vidéo et les nouvelles techniques.">
+					<img src="images/icons/audiovisual.svg" alt="">
+					<span>Audiovisuel</span>
+				</button>
+
+			</div>
+
+			<div class="interest-description" aria-live="polite">
+				<div class="interest-description-content">
+					<h3></h3>
+					<p></p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+</main>
+
+
+<footer class="site-footer">
+
+    <div class="page footer-content">
+
+        <span>DIMITRI GAY</span>
+
+        <nav>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+    </div>
+
+</footer>
+
+<script src="js/script.js"></script>
+
 </body>
 </html>
