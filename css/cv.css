@@ -95,6 +95,14 @@
     text-shadow: 0 0 8px var(--color-glow);
 }
 
+.PP {
+	clip-path: polygon(var(--clip-corner-small) 0, 100% 0, 100% calc(100% - var(--clip-corner-small)), calc(100% - var(--clip-corner-small)) 100%, 0 100%, 0 var(--clip-corner-small));
+    box-shadow: inset 4px 0 0 var(--color-accent-warm), 4px 4px 0 rgb(52 40 32 / 12%);
+    padding: var(--space-1);
+	margin-right: var(--space-8);
+	margin-top: var(--space-3);
+	margin-bottom: var(--space-3);
+}
 
 /* ========================================
    PROFIL
