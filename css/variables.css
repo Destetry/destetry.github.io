@@ -1,0 +1,99 @@
+:root {
+    /* ========================================
+       COULEURS
+    ======================================== */
+
+    /*--color-background: #E9E0D0;*/
+	--color-background: #FFEAD4;
+    --color-surface: #F5EFE4;
+    --color-surface-raised: #FAF6EE;
+    --color-surface-dark: #342820;
+
+    --color-text: #342820;
+    --color-text-muted: #75695D;
+    --color-border: #514034;
+    --color-border-subtle: rgb(81 64 52 / 22%);
+
+    --color-accent-natural: #8B9270;
+    --color-accent-digital: #64858A;
+    --color-accent-warm: #B47752;
+
+    --color-text-on-dark: #F5EFE4;
+    --color-glow: rgb(100 133 138 / 35%);
+
+
+    /* ========================================
+       ESPACEMENTS
+    ======================================== */
+
+    --space-1: 4px;
+    --space-2: 8px;
+    --space-3: 12px;
+    --space-4: 16px;
+    --space-5: 24px;
+    --space-6: 32px;
+    --space-7: 48px;
+    --space-8: 64px;
+
+
+    /* ========================================
+       CONTENEURS
+    ======================================== */
+
+    --container-width: 1200px;
+    --page-gutter: 24px;
+
+
+    /* ========================================
+       BORDURES ET FORMES
+    ======================================== */
+
+    --border-width: 2px;
+    --border-width-inner: 1px;
+    --border-radius: 0;
+
+    --clip-corner: 14px;
+
+
+    /* ========================================
+       OMBRES ET LUMIÈRES
+    ======================================== */
+
+    --shadow-panel: 6px 6px 0 var(--color-text);
+    --shadow-panel-hover: 8px 8px 0 var(--color-text);
+
+    --shadow-soft:
+        0 8px 24px rgb(52 40 32 / 8%);
+
+    --shadow-glow:
+        0 0 10px var(--color-glow);
+
+
+    /* ========================================
+       TYPOGRAPHIE
+    ======================================== */
+
+    --font-heading: "Syne", sans-serif;
+    --font-body: "DM Sans", sans-serif;
+    --font-mono: "IBM Plex Mono", monospace;
+
+    --font-size-small: 0.875rem;
+    --font-size-base: 1rem;
+    --font-size-large: 1.25rem;
+
+    --line-height-heading: 1.05;
+    --line-height-body: 1.6;
+
+
+    /* ========================================
+       TRANSITIONS
+    ======================================== */
+
+    --transition-fast: 150ms ease;
+    --transition-base: 250ms ease;
+	
+	/* FORMES INDUSTRIELLES */
+	--clip-corner: 14px;
+	--clip-corner-small: 8px;
+	--border-width-inner: 1px;
+}

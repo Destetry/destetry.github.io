@@ -1,0 +1,173 @@
+
+/* ========================================
+   STRUCTURE GÉNÉRALE
+======================================== */
+
+.page {
+    width: min(
+        calc(100% - var(--page-gutter) - var(--page-gutter)),
+        var(--container-width)
+    );
+    margin-inline: auto;
+}
+
+.cv-page {
+    position: relative;
+    isolation: isolate;
+
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-8);
+
+    padding-block: var(--space-8);
+}
+
+/* ========================================
+   SECTIONS
+======================================== */
+
+.cv-section {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-5);
+}
+
+/* ========================================
+   TITRES DE SECTION
+======================================== */
+
+.section-heading {
+    display: flex;
+    align-items: baseline;
+    gap: var(--space-3);
+
+    padding-bottom: var(--space-3);
+    border-bottom: var(--border-width-inner) solid var(--color-border-subtle);
+}
+
+.section-number {
+    flex-shrink: 0;
+
+    font-family: var(--font-mono);
+    font-size: var(--font-size-small);
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+
+    color: var(--color-accent-digital);
+}
+
+/* Repère technique après le numéro */
+
+.section-number::after {
+    content: "//";
+    margin-left: var(--space-2);
+
+    color: var(--color-accent-warm);
+    opacity: 0.8;
+}
+
+.section-heading h2 {
+    font-family: var(--font-heading);
+    font-size: clamp(1.35rem, 2vw, 1.65rem);
+    font-weight: 800;
+    line-height: 1.1;
+    letter-spacing: -0.025em;
+    text-transform: uppercase;
+
+    color: var(--color-text);
+}
+
+/* ========================================
+   ANNOTATIONS TECHNIQUES
+======================================== */
+
+.eyebrow {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+
+    color: var(--color-text-muted);
+}
+
+
+/* CIRCUITS IMPRIMÉS EN FOND DE PAGE */
+
+.circuits-background {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.circuit {
+    position: absolute;
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: none;
+    max-height: none;
+    transform: scale(2.5);
+    transform-origin: center;
+    opacity: 0.32;
+}
+
+/* LES CIRCUITS ENTRANT PAR LA GAUCHE */
+
+.circuit--left {
+
+    transform: rotate(90deg) scale(2.5);
+	transform-origin: bottom;
+}
+
+/* LES CIRCUITS ENTRANT PAR LA DROITE */
+
+.circuit--right {
+
+    transform: rotate(-90deg) scale(2.5);
+	transform-origin: bottom;
+}
+
+/* RÉPARTITION SUR LA HAUTEUR DE LA PAGE */
+
+.circuit--1 { top: 3%; left: -50px}
+.circuit--2 { top: 27%; left: -75px}
+
+.circuit--3 { top: 13%; left: -50px}
+.circuit--4 { top: 37%; left: -75px}
+
+.circuit--5 { top: 52%; left: -60px}
+.circuit--6 { top: 63%; left: -75px}
+
+.circuit--7 { top: 77%; left: -65px}
+.circuit--8 { top: 88%; left: -52px}
+
+.circuit--1C { top: 76%; right: -50px}
+.circuit--2C { top: 55%; right: -75px}
+
+.circuit--3C { top: 93%; right: -50px}
+.circuit--4C { top: 66%; right: -75px}
+
+.circuit--5C { top: 27%; right: -60px}
+.circuit--6C { top: 5%; right: -75px}
+
+.circuit--7C { top: 42%; right: -65px}
+.circuit--8C { top: 15%; right: -52px}
+/* LE CONTENU RESTE AU PREMIER PLAN */
+
+.cv-page > :not(.circuits-background) {
+    position: relative;
+    z-index: 1;
+}
+
+/* MASQUAGE SI LES MARGES SONT TROP ÉTROITES */
+
+@media (max-width: 1400px) {
+    .circuits-background {
+        display: none;
+    }
+}
